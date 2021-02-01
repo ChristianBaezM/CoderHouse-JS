@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+h1.titleS:hover {
+  color: #0ea3ed;
+}
+
+header .titleS {
+  text-align: center;
+  margin-top: 50px;
+  color: #477992;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main .mainBudget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .mainBudget .phases ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+main .mainBudget .phases ul li {
+  width: 150px;
+  margin: 3%;
+}
+
+main .mainBudget .times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .mainBudget .times input {
+  width: 75px;
+  margin: 4%;
+  border-radius: 10%;
+}
+
+main .mainBudget .times label.total {
+  text-align: center;
+  width: 70px;
+  margin: 10%;
+}
+
+main .mainBudget .groupValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .mainBudget .groupValues label {
+  text-align: center;
+  width: 165px;
+  margin: 3%;
+}
+
+main .adds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+main .adds .heading ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+main .adds .heading ul li {
+  width: 150px;
+  margin: 5%;
+}
+
+main .adds .groupValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .adds .groupValues input {
+  width: 150px;
+  margin: 4%;
+  border-radius: 10%;
+  margin-left: 20px;
+}
+
+main .adds .groupValues label {
+  text-align: center;
+  width: 165px;
+  margin: 3%;
+}
+
+main .sender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+main .sender .email {
+  width: 400px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 1%;
+  border-radius: 10%;
+}
+
+main .sender1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .sender1 .sendBudget, main .sender1 .sendMail {
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#67b26b), to(#4ca2cb)) !important;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px;
+  width: 250px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+main .sender1 .sendBudget span, main .sender1 .sendMail span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .sender1 .sendBudget span::after, main .sender1 .sendMail span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .sender1 .sendBudget:hover span, main .sender1 .sendMail:hover span {
+  padding-right: 25px;
+}
+
+main .sender1 .sendBudget:hover span::after, main .sender1 .sendMail:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Presupuestos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="titleS">GENERADOR DE PRESUPUESTOS</h1>
+    </header>
+    <main>
+        <h2>Nº Presupuesto</h2>
+        <div class="mainBudget">
+            <div class="phases">
+                <h3>FASES</h3>
+                <ul id="phases">
+                    <li>Diseño</li>
+                    <li>Estructural</li>
+                    <li>Construcción</li>
+                    <li>Pruebas</li>
+                    <li>Entrega / Despliegue</li>
+                </ul>
+            </div>
+            <div class="times">
+                <h3>TIEMPOS</h3>
+                <input id="designTime" type="number" min="0" pattern="^[0-9]+" value="0">
+                <input id="structureTime" type="number" min="0" pattern="^[0-9]+" value="0">
+                <input id="constructionTime" type="number" min="0" pattern="^[0-9]+" value="0">
+                <input id="testingTime" type="number" min="0" pattern="^[0-9]+" value="0">
+                <input id="deployTime" type="number" min="0" pattern="^[0-9]+" value="0">
+                <label class="total" id="total" for="">0</label>
+            </div>
+            <div class="values">
+                <h3>VALOR ESTIMADO</h3>
+                <div class="groupValues">
+                    <label id="designValue" for="">$ 0 COP</label>
+                    <label id="structureValue" for="">$ 0 COP</label>
+                    <label id="constructionValue" for="">$ 0 COP</label>
+                    <label id="testingValue" for="">$ 0 COP</label>
+                    <label id="deployValue" for="">$ 0 COP</label>
+                    <label id="totalValue" for="">$ 0 COP</label>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="heading">
+                <h3>RUBRO</h3>
+                <ul>
+                    <li id="licensesTag">Licencias</li>
+                    <li id="changesTag">Cambios Adicionales</li>
+                    <li>SUBTOTAL</li>
+                    <li>Anticipo</li>
+                    <li>Impuestos (19%)</li>
+                    <li>TOTAL</li>
+                </ul>
+            </div>
+            <div class="addValues">
+                <h3>VALOR APROXIMADO</h3>
+                <div class="groupValues">
+                    <input id="licenses" type="number" min="0" pattern="^[0-9]+">
+                    <input id="changes" type="number" min="0" pattern="^[0-9]+">
+                    <label id="subtotal" for="">$ 0 COP</label>
+                    <input id="advance" type="number" min="0" pattern="^[0-9]+">
+                    <label id="taxes" for="">$ 0 COP</label>
+                    <label id="totalBudget" for="">$ 0 COP</label>
+                </div>
+            </div>
+        </div>
+        <div class="sender">
+            <input class="email" type="email" id="inp" placeholder="Email">
+        </div>
+        <div class="sender1">
+            <button onclick="sendEmail()" class="sendMail"><span>ENVIAR PRESUPUESTO</span></button>
+            <button onclick="send()" class="sendBudget"><span>GENERAR PRESUPUESTO</span></button>
+        </div>
+    </main>
+    <script src="./js/presupuesto.js"></script>
+</body>
+</html>
