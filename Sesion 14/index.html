@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./images/icons8-pokeball-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="flex">
+        <template id="template-card">
+            <article class="card">
+                <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+                <div class="card-body">
+                    <img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
+                    <h1 class="card-body-title">
+                        Victor charst
+                        <span>26</span>
+                    </h1>
+                    <p class="card-body-text">London</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-social">
+                        <h3>80K</h3>
+                        <p>Attack</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>803K</h3>
+                        <p>Special</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>1.4K</h3>
+                        <p>Defense</p>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <!-- Button trigger modal -->
+        <button id="myModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="display: none;"></button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">POKEMON GO!!!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://img.icons8.com/color/48/000000/smartphone.png" class="pokedex">
+                    <img src="https://img.icons8.com/color/48/000000/pokeball--v1.png" class="pokeball">
+                    <template id="template-pokemon">
+                        <img src="https://img.icons8.com/color/48/000000/open-pokeball--v2.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/snorlax.png" class="card-pokemon">
+                        <img src="https://img.icons8.com/color/48/000000/gotcha.png"/>
+                    </template>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">CATCH'EM ALL!!!</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
