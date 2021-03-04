@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+h2.titleS:hover {
+  color: #0ea3ed; }
+
+main {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center; }
+  main .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    main .flex aside {
+      width: 50%;
+      margin-top: 1%; }
+      main .flex aside h2 {
+        margin-bottom: 40px;
+        color: #477992;
+        font-size: 3.0em; }
+      main .flex aside img {
+        width: 40%;
+        margin: 50px;
+        animation: picEffect 5.0s; }
+    main .flex section {
+      width: 45%;
+      margin-right: 5%;
+      margin-top: 5%; }
+      main .flex section article h2 {
+        margin-bottom: 40px; }
+      main .flex section article p {
+        color: #283035;
+        margin-bottom: 50px; }
+      main .flex section article h3 {
+        margin-bottom: 60px; }
+      main .flex section article div {
+        margin-bottom: 5px; }
+        main .flex section article div img {
+          transition: transform 3s; }
+
+footer {
+  text-align: center;
+  cursor: pointer; }
+  footer .brand {
+    width: fit-content;
+    overflow: hidden;
+    border-right: .15em solid #000000;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .30em;
+    animation: typingEnd 5s steps(30, end), blink-caret 0.5s step-end infinite; }
+  footer .line {
+    width: 35%;
+    border: 2px solid;
+    background-color: #000000;
+    animation: lineEffect 5.0s; }
+  footer h6 {
+    font-weight: bold;
+    margin-top: 20px; }
+
+main .titleS, main main {
+  text-align: center;
+  margin-top: 50px;
+  color: #477992;
+  margin-bottom: 40px;
+  font-size: 2.5em; }
+
+main .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "logo timeLine" "texto timeLine"; }
+  main .grid-container .logo {
+    grid-area: logo; }
+    main .grid-container .logo img {
+      width: 25%; }
+  main .grid-container .texto {
+    grid-area: texto; }
+    main .grid-container .texto p {
+      margin: 50px 50px; }
+  main .grid-container .timeLine {
+    grid-area: timeLine;
+    display: flex;
+    align-self: center;
+    justify-self: center; }
+
+main .flags {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3% 0;
+  cursor: pointer; }
+  main .flags img {
+    width: 15%;
+    transition: transform 2s; }
+
+main h3 {
+  margin: 3% 0; }
+
+main .barra {
+  display: flex;
+  justify-content: space-evenly; }
+  main .barra h3 {
+    margin: 0;
+    text-align: center; }
+  main .barra .progress {
+    width: 70%;
+    height: 30px; }
+    main .barra .progress .progress-bar {
+      width: 80%; }
+      main .barra .progress .progress-bar p {
+        margin-top: 1.5em; }
+      main .barra .progress .progress-bar #percentage:before {
+        content: "80"; }
+      main .barra .progress .progress-bar #percentage.usa:before {
+        content: "80"; }
+      main .barra .progress .progress-bar #percentage.france:before {
+        content: "60"; }
+      main .barra .progress .progress-bar #percentage.germany:before {
+        content: "30"; }
+
+main .title-skills {
+  color: #228b22;
+  font-family: monospace;
+  width: fit-content;
+  overflow: hidden;
+  border-right: .15em solid #000000;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .30em;
+  animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite; }
+
+main .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3%; }
+  main .skills div h6 {
+    margin-bottom: 50px; }
+
+main .experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px; }
+  main .experience .tab {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1; }
+    main .experience .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s; }
+  main .experience .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    width: 60%; }
+    main .experience .tabcontent .group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      main .experience .tabcontent .group .enterprise, main .experience .tabcontent .group .date {
+        font-weight: bold;
+        margin-bottom: 0; }
+    main .experience .tabcontent .city {
+      text-align: start; }
+    main .experience .tabcontent .enterprise-description, main .experience .tabcontent .functions {
+      text-align: justify; }
+    main .experience .tabcontent .achievements {
+      text-align: justify;
+      margin-bottom: 0; }
+    main .experience .tabcontent .position, main .experience .tabcontent .achievements-t {
+      font-weight: bold;
+      text-align: justify;
+      margin-bottom: 0; }
+
+main .carousel .carousel-control-prev {
+  filter: invert(100%);
+  margin-left: 10%; }
+
+main .carousel .carousel-control-next {
+  filter: invert(100%);
+  margin-right: 10%; }
+
+main .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  main .description img.github {
+    position: absolute;
+    margin-left: -109%;
+    cursor: pointer; }
+  main .description img.heart {
+    position: absolute;
+    margin-left: 109%;
+    cursor: pointer; }
+
+main .languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%; }
+
+main form .information {
+  display: flex;
+  justify-content: center; }
+  main form .information .name, main form .information .mail {
+    width: 44%;
+    border: #000000 solid 2px;
+    margin-bottom: 1%;
+    margin: 1%; }
+  main form .information .name::placeholder, main form .information .mail::placeholder {
+    text-align: center; }
+
+main form .issue .issueMessage {
+  width: 90%;
+  border: #000000 solid 2px;
+  margin-bottom: 1%; }
+
+main form .issue .issueMessage::placeholder {
+  text-align: center; }
+
+main form .messageBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  margin-bottom: 5%;
+  grid-template-areas: "message attach" "message sender"; }
+  main form .messageBody .message {
+    grid-area: message; }
+    main form .messageBody .message textarea {
+      width: 160%;
+      margin-left: 10%;
+      border: #000000 solid 2px; }
+    main form .messageBody .message textarea::placeholder {
+      text-align: center; }
+  main form .messageBody .attach {
+    grid-area: attach;
+    display: flex;
+    justify-self: flex-end;
+    padding-left: 9%;
+    width: 30%;
+    margin-top: 6%;
+    transition: transform 2s; }
+    main form .messageBody .attach label {
+      cursor: pointer; }
+    main form .messageBody .attach input.attachFile {
+      display: none; }
+  main form .messageBody .sender {
+    grid-area: sender;
+    display: flex;
+    justify-self: flex-end;
+    padding-left: 8%;
+    width: 30%;
+    margin: 2%;
+    transition: transform 2s; }
+    main form .messageBody .sender button {
+      border-radius: 80%;
+      width: 50%;
+      background-color: transparent;
+      border: none; }
+
+main .borderLine {
+  margin: auto 4%;
+  border: 1px solid gray;
+  border-radius: 10%;
+  padding-bottom: 3%; }
+  main .borderLine .mainBudget {
+    display: flex;
+    justify-content: space-around; }
+    main .borderLine .mainBudget .phases ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding-left: 0; }
+      main .borderLine .mainBudget .phases ul li {
+        width: 210px;
+        margin: 4%; }
+    main .borderLine .mainBudget .times {
+      display: flex;
+      flex-direction: column; }
+      main .borderLine .mainBudget .times input {
+        width: 75px;
+        margin: 5%;
+        border-radius: 10%; }
+      main .borderLine .mainBudget .times label.total {
+        text-align: center;
+        width: 70px;
+        margin: 10%; }
+    main .borderLine .mainBudget .groupValues {
+      display: flex;
+      flex-direction: column; }
+      main .borderLine .mainBudget .groupValues label {
+        text-align: center;
+        width: 165px;
+        margin: 4%; }
+  main .borderLine .additions {
+    display: flex;
+    justify-content: center; }
+    main .borderLine .additions .addition {
+      border-radius: 4px;
+      background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+      transition: all 0.4s;
+      cursor: pointer;
+      margin: 5px; }
+      main .borderLine .additions .addition span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s; }
+      main .borderLine .additions .addition span::after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s; }
+    main .borderLine .additions .addition:hover span {
+      padding-right: 25px; }
+    main .borderLine .additions .addition:hover span::after {
+      opacity: 1;
+      right: 0; }
+  main .borderLine .adds1 {
+    display: none; }
+    main .borderLine .adds1 .adds {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 3%; }
+      main .borderLine .adds1 .adds .heading ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0; }
+        main .borderLine .adds1 .adds .heading ul li {
+          width: 210px;
+          margin: 5%; }
+      main .borderLine .adds1 .adds .groupValues {
+        display: flex;
+        flex-direction: column; }
+        main .borderLine .adds1 .adds .groupValues input {
+          width: 150px;
+          margin: 4.5%;
+          border-radius: 10%;
+          margin-left: 20px; }
+        main .borderLine .adds1 .adds .groupValues label {
+          text-align: center;
+          width: 165px;
+          margin: 2.5%; }
+  main .borderLine .sender1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%; }
+    main .borderLine .sender1 .email {
+      display: none;
+      width: 400px;
+      padding: 5px;
+      text-align: center;
+      margin-bottom: 1%;
+      border-radius: 10%; }
+  main .borderLine .sender2 {
+    display: flex;
+    justify-content: center; }
+    main .borderLine .sender2 .sendMail {
+      display: none; }
+    main .borderLine .sender2 .sendBudget, main .borderLine .sender2 .sendMail {
+      border-radius: 4px;
+      background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 15px;
+      padding: 10px;
+      width: 250px;
+      transition: all 0.4s;
+      cursor: pointer;
+      margin: 5px; }
+      main .borderLine .sender2 .sendBudget span, main .borderLine .sender2 .sendMail span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.4s; }
+      main .borderLine .sender2 .sendBudget span::after, main .borderLine .sender2 .sendMail span::after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s; }
+    main .borderLine .sender2 .sendBudget:hover span, main .borderLine .sender2 .sendMail:hover span {
+      padding-right: 25px; }
+    main .borderLine .sender2 .sendBudget:hover span::after, main .borderLine .sender2 .sendMail:hover span::after {
+      opacity: 1;
+      right: 0; }
+
+@keyframes picEffect {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg); }
+  to {
+    opacity: 1;
+    transform: rotateX(0); } }
+
+@keyframes lineEffect {
+  from {
+    width: 90%; }
+  to {
+    width: 35%; } }
+
+.flags > img:hover {
+  transform: scale(1.2); }
+
+img.icons:hover {
+  transform: scale(1.2); }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 27em; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #000000; } }
+
+.experience .tab button:hover {
+  background-color: #ddd; }
+
+.experience .tab button.active {
+  background-color: #ccc; }
+
+img.github:hover, img.heart:hover {
+  transform: scale(1.2); }
+
+@keyframes typingEnd {
+  from {
+    width: 0; }
+  to {
+    width: 12em; } }
+
+div.attach:hover, div.sender:hover {
+  transform: scale(1.2); }
+
+@media (min-width: 250px) and (max-width: 1000px) {
+  @keyframes lineEffect {
+    from {
+      width: 90%; }
+    to {
+      width: 55%; } }
+  div.flex {
+    display: flex;
+    flex-direction: column; }
+    div.flex aside {
+      width: 100%; }
+      div.flex aside img {
+        width: 70%; }
+    div.flex section {
+      width: 100%;
+      margin-right: 5%;
+      margin-top: 5%;
+      padding: 10%; }
+  footer hr.line {
+    width: 55%; }
+  div.grid-container {
+    display: flex;
+    flex-direction: column; }
+    div.grid-container .logo img {
+      width: 50%; }
+    div.grid-container .timeLine {
+      display: flex;
+      align-self: center;
+      justify-self: center; }
+      div.grid-container .timeLine img {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+  div h2 {
+    margin: 7% 0; }
+  div.flags {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 0; }
+    div.flags img {
+      width: 20%; }
+  .barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%; }
+    .barra .progress {
+      margin: 2%; }
+  h3.title-skills {
+    width: min-content;
+    font-size: medium;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite; }
+  @keyframes typing {
+    from {
+      width: 0; }
+    to {
+      width: 20em; } }
+  div.skills {
+    margin-top: 10%; }
+  div.experience {
+    margin: 20% 5%; }
+    div.experience .group {
+      display: flex;
+      flex-wrap: wrap; }
+  img.CV {
+    width: 29.6%; }
+  img.Pod, img.DB {
+    width: 50%; }
+  .description {
+    display: flex;
+    align-items: center; }
+    .description img.github {
+      margin-right: -10%; }
+    .description img.heart {
+      margin-right: 10%; }
+    .description p {
+      width: 80%; }
+  .languages {
+    margin-top: 5%; }
+  div.messageBody div.message textarea {
+    width: 135%; }
+  div.messageBody div.attach {
+    margin-right: 25%;
+    margin-top: 20%;
+    padding-left: 13%; }
+  div.messageBody div.sender {
+    margin-right: 25%; } }
